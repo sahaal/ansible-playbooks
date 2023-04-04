@@ -1,0 +1,10 @@
+---
+- name: Install Java on RHEL 8
+  hosts: your_host
+  become: yes
+  tasks:
+    - name: Install OpenJDK 11
+      yum:
+        name: java-11-openjdk-devel
+        state: present
+
